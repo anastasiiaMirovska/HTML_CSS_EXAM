@@ -1,0 +1,109 @@
+
+body{
+    margin:0;
+    background-color: #19191B;
+}
+.container{
+    width: 100%;
+    max-width: 1200px;
+    padding:0 15px;
+    margin-left:auto;
+    margin-right:auto;
+}
+/*---------------------------------HEADER-------------------------------*/
+header{
+    width:100vw;
+    margin:40px 0;
+    display:flex;
+    justify-content: center;
+}
+.spacing{
+    display:flex;
+    justify-content: space-between;
+}
+nav{
+    display: inline-flex;
+    align-items: center;
+    gap: 40px;
+}
+.spacing button{
+    width: 160px;
+    height: 45px;
+    flex-shrink: 0;
+    background-color: rgba(0,0,0,0);
+    border-radius: 5px;
+    border: 1px solid #FFF;
+    backdrop-filter: blur(1px);
+}
+.spacing button>span{
+    color: #FFF;
+    text-align: center;
+    /*font-family: "Lato";*/
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: -0.5px;
+}
+/*-------------------------------------MAIN-------------------------------*/
+/*---------------------------------FIRST SCREEN-------------------------------*/
+.banner{
+    width:100vw;
+    height:85vh;
+    color:white;
+    background: radial-gradient(50% 50% at 50% 50%, #353550 0%, rgba(25, 25, 27, 0.00) 100%);
+    display:flex;
+}
+.text_box{
+    width:50vw;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+.text_box>h1{
+    width:536px;
+    margin:0 0 24px 0;
+    color: #FFF;
+    /*font-family: "Lato";*/
+    font-size: 80px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 84px;
+}
+.text_box>p{
+    width:536px;
+    margin:0;
+    color: rgba(255, 255, 255, 0.70);
+    /*font-family: "Lato";*/
+    font-size: 21px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 39px; /* 185.714% */
+    letter-spacing: -0.657px;
+}
+.text_box>button{
+    width: 204px;
+    height: 58px;
+    flex-shrink: 0;
+    border-radius: 4px;
+    background-color: #5454D4;
+    margin:50px 0;
+}
+button>span{
+    color: #FFF;
+    /*font-family: "Lato";*/
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+.photo_banner{
+    width:50vw;
+    display:flex;
+    justify-content: right;
+    align-items: center;
+}
+.photo_banner>img{
+    width:90%;
+}
