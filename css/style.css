@@ -1,7 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
 
 body{
     margin:0;
     background-color: #19191B;
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+}
+/*---------------------------------BLOCKS-------------------------------------------*/
+.block{
+    width:100%;
+    color:white;
+    background: radial-gradient(50% 50% at 50% 50%, #353550 0%, rgba(25, 25, 27, 0.00) 100%);
+    display:flex;
+}
+.new_block{
+    width:100%;
+    color:white;
+    display:flex;
+    background: rgba(30, 30, 32, 0.5);
+}
+.inner{
+    width:100%;
+    margin-top:150px;
+    display: flex;
+    flex-direction: column;
 }
 .container{
     width: 100%;
@@ -10,12 +32,92 @@ body{
     margin-left:auto;
     margin-right:auto;
 }
+/*--------------------------------------TEXT STYLIZATION-------------------------------*/
+.white-transparent-text{
+    color: rgba(255, 255, 255, 0.70);
+    font-size: 20px;
+    font-weight: 400;
+    letter-spacing: -0.657px;
+    line-height: 39px; /* 185.714% */
+    width:100%;
+}
+h2{
+     color: #FFF;
+     font-family: 'Lato', sans-serif;
+     font-size: 60px;
+     font-weight: 400;
+ }
+/*----------------------------------BUTTONS-----------------------------------------*/
+.blue_button>button{
+    width: 204px;
+    height: 58px;
+    border:none;
+    border-radius: 4px;
+    background-color: #5454D4;
+    margin-top:60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s ;
+}
+.blue_button>button>span{
+    color: #FFF;
+    font-family: 'Lato', sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+.blue_button>button:hover{
+    background-color: #4545c7;
+    box-shadow: -4px 10px 10px #131315;
+    transform: scale(1.02);
+    transition: 0.2s;
+}
+.blue_button>button:active{
+    background-color: #4040c2;
+    box-shadow: none;
+    transform: scale(0.92);
+}
+
+.white_button button{
+    width: 160px;
+    height: 45px;
+    background-color: rgba(0,0,0,0);
+    border-radius: 5px;
+    border: 1px solid #FFF;
+    backdrop-filter: blur(1px);
+    color: #FFF;
+    text-align: center;
+    font-family: 'Lato', sans-serif;
+    font-size: 16px;
+    letter-spacing: -0.5px;
+}
+.white_button button:hover{
+    background-color: #FFF;
+    color:#19191B;
+    transform: scale(1.02);
+    transition: 0.2s;
+}
+.white_button button:active {
+    background-color: #19191B;
+    color: #FFF;
+    transform: scale(0.92);
+    transition: 0.4s;
+}
+
+.logo:hover{
+    transform: scale(1.05);
+    transition: 0.1s;
+}
+
 /*---------------------------------HEADER-------------------------------*/
 header{
-    width:100vw;
-    margin:40px 0;
+    width:100%;
+    height:90px;
     display:flex;
     justify-content: center;
+    align-items: center;
 }
 .spacing{
     display:flex;
@@ -26,84 +128,210 @@ nav{
     align-items: center;
     gap: 40px;
 }
-.spacing button{
-    width: 160px;
-    height: 45px;
-    flex-shrink: 0;
-    background-color: rgba(0,0,0,0);
-    border-radius: 5px;
-    border: 1px solid #FFF;
-    backdrop-filter: blur(1px);
+nav>a{
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.70);
+    font-size: 18px;
 }
-.spacing button>span{
-    color: #FFF;
-    text-align: center;
-    /*font-family: "Lato";*/
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    letter-spacing: -0.5px;
+nav>a:hover{
+    font-size: 20px;
+    transition: 0.2s;
 }
+
+nav>a:nth-child(1){
+    color: #5454D4;
+    font-weight: 600;
+}
+
 /*-------------------------------------MAIN-------------------------------*/
+main{
+    width:100%;
+    display:flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
 /*---------------------------------FIRST SCREEN-------------------------------*/
 .banner{
-    width:100vw;
-    height:85vh;
-    color:white;
-    background: radial-gradient(50% 50% at 50% 50%, #353550 0%, rgba(25, 25, 27, 0.00) 100%);
+    height:713px;
     display:flex;
 }
 .text_box{
-    width:50vw;
+    width:40vw;
     display:flex;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
 }
 .text_box>h1{
-    width:536px;
+    width:100%;
     margin:0 0 24px 0;
     color: #FFF;
-    /*font-family: "Lato";*/
+    font-family: 'Lato', sans-serif;
     font-size: 80px;
     font-style: normal;
     font-weight: 400;
     line-height: 84px;
 }
-.text_box>p{
-    width:536px;
+.text_box>span{
     margin:0;
-    color: rgba(255, 255, 255, 0.70);
-    /*font-family: "Lato";*/
-    font-size: 21px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 39px; /* 185.714% */
-    letter-spacing: -0.657px;
 }
-.text_box>button{
-    width: 204px;
-    height: 58px;
-    flex-shrink: 0;
-    border-radius: 4px;
-    background-color: #5454D4;
-    margin:50px 0;
-}
-button>span{
-    color: #FFF;
-    /*font-family: "Lato";*/
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-}
+
 .photo_banner{
-    width:50vw;
+    width:60vw;
     display:flex;
     justify-content: right;
-    align-items: center;
+    align-items: flex-start;
 }
 .photo_banner>img{
-    width:90%;
+    width: 656px;
+    height: 713px;
+}
+/*------------------------------"Why Enver Is The Best Choice?" Block------------------------*/
+.why_us{
+    height:1024px;
+    flex-direction: column;
+}
+.why_us .text_horizontal{
+    width:100%;
+    display:flex;
+    justify-content: space-between;
+}
+
+.why_us .text_horizontal h2{
+    width:40vw;
+    margin:0;
+}
+.why_us .text_horizontal span{
+    margin:25px 0;
+    width:40vw;
+    padding:0 15px;
+}
+.text_horizontal{
+    margin:0 0 50px 0;
+    display:flex;
+}
+
+/*------------------------------"The Service We Provide For You" Block------------------------*/
+.service{
+    height:1024px;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+.service>.inner{
+    align-items: center;
+}
+.service h2{
+    width:695px;
+    text-align: center;
+    margin:0 0 100px 0;
+}
+.space{
+    padding:40px;
+}
+.icon_box{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap:20px;
+}
+.box_segment{
+    width:300px;
+    display:flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+}
+.box_segment img:hover{
+    transform: scale(1.1);
+    transition: 0.2s;
+}
+
+.box_segment h4{
+    color: #FFF;
+    text-align: center;
+    font-size: 28px;
+    font-weight: 600;
+    letter-spacing: -0.75px;
+    margin:20px 0 24px 0;
+}
+.box_segment span{
+    width:300px;
+    text-align:center;
+}
+/*------------------------------"Our Awesome Portfolio" Block------------------------*/
+.portfolio{
+    height:830px;
+    display:flex;
+}
+.portfolio h2{
+    color: #FFF;
+    font-size: 58px;
+    font-weight: 800;
+    margin:0;
+}
+.image_box{
+    display:flex;
+    justify-content: space-between;
+    margin:185px 0 185px 0;
+}
+.image_box>.portfolio_border{
+    width: 384px;
+    height: 301px;
+    border-radius: 14px;
+    background: #1E1E20;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.image_box>.portfolio_border>img{
+    border-radius: 12px;
+}
+.portfolio_border:hover{
+    transform: scale(1.05);
+    transition: 0.25s;
+}
+
+/*------------------------------"Contact us for the service you want to use" Block------------------------*/
+.contacts{
+    height:500px;
+}
+.contact_box{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.contact_box>div{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contact_box>div h2{
+    margin:0;
+    width:50vw;
+}
+.contact_box>div button{
+    margin:0;
+}
+/*------------------------------"Footer" Block------------------------*/
+.footer{
+    height:190px;
+    display:flex;
+    align-content: center;
+}
+.footer_box{
+    width:100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.footer_box>.white-transparent-text{
+
+    text-align: right;
+    font-size: 16px;
+    letter-spacing: -0.5px;
+}
+.footer_box span{
+    width:280px;
 }
