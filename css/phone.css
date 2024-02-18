@@ -1,0 +1,186 @@
+@media screen  and ( max-width: 500px){
+
+    /*---------------------------------BLOCKS-------------------------------------------*/
+    .inner{
+        margin-top:130px;
+    }
+    .container{
+        width: 100%;
+        max-width: 310px;
+        padding:0 15px;
+        margin-left:auto;
+        margin-right:auto;
+    }
+    /*--------------------------------------TEXT STYLIZATION-------------------------------*/
+    .white-transparent-text{
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 150%; /* 24px */
+    }
+    h2{
+        font-size: 36px;
+        font-weight: 400;
+        line-height: 150%; /* 54px */
+    }
+    /*----------------------------------BUTTONS-----------------------------------------*/
+    .blue_button>button{
+        width: 166px;
+        height: 44px;
+    }
+    .blue_button>button>span{
+        font-size: 16px;
+    }
+    .white_button{
+        display:none;
+    }
+    .logo{
+        height:27px;
+    }
+    /*-----------------------------HEADER---------------------------------*/
+    nav{
+        display: none;
+    }
+
+    /*----------------------------- MAIN --------------------------------------*/
+    /*------------------------- FIRST SCREEN -------------------------------*/
+    .banner{
+        flex-wrap:wrap;
+        height:954px;
+    }
+    .text_box{
+        width:85vw;
+        height:525px;
+    }
+    .text_box>h1{
+        font-size: 42px;
+        line-height: 150%;
+        margin:0 0 30px 0;
+    }
+    .photo_banner{
+        width:100%;
+        height: 406px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .photo_banner>img{
+        min-width: 300px;
+        max-width: 320px;
+        height: 406px;
+    }
+    /*------------------------------"Why Enver Is The Best Choice?" Block------------------------*/
+    .why_us{
+        height: 580px;
+    }
+    .why_us .text_horizontal{
+        display:flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin:0 0 20px 0;
+    }
+    .why_us .text_horizontal h2{
+        width:95%;
+    }
+    .why_us .text_horizontal span{
+        width:95%;
+        margin:30px 0;
+        padding:0;
+    }
+    /*------------------------------"The Service We Provide For You" Block------------------------*/
+    .service{
+        height:2100px;
+    }
+    .service .inner{
+        height:2100px;
+        justify-content: left;
+    }
+    .service h2{
+        width:95%;
+    }
+    .icon_box{
+        height:fit-content;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        gap:20px;
+    }
+
+    .box_segment{
+        margin:40px 0;
+    }
+    .box_segment h4{
+        font-size: 24px;
+    }
+    /*------------------------------"Our Awesome Portfolio" Block------------------------*/
+    .portfolio{
+        height:600px;
+    }
+    .portfolio .inner{
+        height: fit-content;
+    }
+
+    .portfolio h2{
+        font-size: 35px;
+        font-weight: 400;
+    }
+    .image_box{
+        margin:50px  0 0 0;
+        display: flex;
+        justify-content: center;
+        position: relative;
+        z-index: 2;
+    }
+    .image_box>.portfolio_border{
+        max-width: 90vw;
+        height: 270px;
+        position: absolute;
+        z-index: 2;
+    }
+    .image_box>.portfolio_border>img{
+        max-width: 82vw;
+        height: 220px;
+        position: absolute;
+        z-index: 2;
+    }
+    .image_box>.portfolio_border:nth-child(1n+2){
+        display:none;
+    }
+    /*------------------------------"Contact us for the service you want to use" Block------------------------*/
+    .contacts{
+        height:420px;
+    }
+    .contact_box>div{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .contact_box>div h2{
+        margin:0;
+        width:95%;
+    }
+    .contact_box .blue_button{
+        margin-top:50px;
+    }
+
+
+    /*------------------------------"Footer" Block------------------------*/
+    .footer{
+        height:420px;
+    }
+
+    .footer_box{
+        height:305px;
+        flex-wrap:wrap;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+    .footer_box span{
+        text-align: center;
+    }
+    .footer_box>.white-transparent-text{
+
+        text-align: center;
+    }
+    .footer_box .support{
+        display: contents;
+    }
+}

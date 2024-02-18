@@ -6,6 +6,7 @@ body{
     font-family: 'Lato', sans-serif;
     font-weight: 400;
 }
+
 /*---------------------------------BLOCKS-------------------------------------------*/
 .block{
     width:100%;
@@ -46,6 +47,7 @@ h2{
      font-family: 'Lato', sans-serif;
      font-size: 60px;
      font-weight: 400;
+     line-height: 70px;
  }
 /*----------------------------------BUTTONS-----------------------------------------*/
 .blue_button>button{
@@ -64,9 +66,7 @@ h2{
     color: #FFF;
     font-family: 'Lato', sans-serif;
     font-size: 20px;
-    font-style: normal;
     font-weight: 700;
-    line-height: normal;
 }
 .blue_button>button:hover{
     background-color: #4545c7;
@@ -193,6 +193,7 @@ main{
 }
 .why_us .text_horizontal{
     width:100%;
+    margin:0 0 50px 0;
     display:flex;
     justify-content: space-between;
 }
@@ -206,10 +207,7 @@ main{
     width:40vw;
     padding:0 15px;
 }
-.text_horizontal{
-    margin:0 0 50px 0;
-    display:flex;
-}
+
 
 /*------------------------------"The Service We Provide For You" Block------------------------*/
 .service{
@@ -219,17 +217,19 @@ main{
     align-items: center;
 }
 .service>.inner{
+    height:1024px;
+    display:flex;
+    justify-content: space-around;
     align-items: center;
 }
 .service h2{
     width:695px;
     text-align: center;
-    margin:0 0 100px 0;
+    margin:0 0 50px 0;
 }
-.space{
-    padding:40px;
-}
+
 .icon_box{
+    height:640px;
     display:flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -237,10 +237,12 @@ main{
 }
 .box_segment{
     width:300px;
+    height:205px;
     display:flex;
     flex-direction: column;
     justify-items: center;
     align-items: center;
+    margin:40px;
 }
 .box_segment img:hover{
     transform: scale(1.1);
@@ -259,10 +261,14 @@ main{
     width:300px;
     text-align:center;
 }
+.box_segment>.white-transparent-text{
+    line-height: 28px;
+}
 /*------------------------------"Our Awesome Portfolio" Block------------------------*/
 .portfolio{
     height:830px;
     display:flex;
+    flex-direction: column;
 }
 .portfolio h2{
     color: #FFF;
@@ -286,6 +292,8 @@ main{
 }
 .image_box>.portfolio_border>img{
     border-radius: 12px;
+    width: 336px;
+    height: 253px;
 }
 .portfolio_border:hover{
     transform: scale(1.05);
@@ -319,6 +327,13 @@ main{
     height:190px;
     display:flex;
     align-content: center;
+    color:#FFF;
+}
+.footer .inner{
+    margin:0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .footer_box{
     width:100%;
@@ -334,4 +349,7 @@ main{
 }
 .footer_box span{
     width:280px;
+}
+.footer_box .support{
+    display:none;
 }
