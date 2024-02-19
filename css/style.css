@@ -135,6 +135,7 @@ nav>a{
 }
 nav>a:hover{
     font-size: 20px;
+    color: #5454D4;
     transition: 0.2s;
 }
 
@@ -204,7 +205,7 @@ main{
 }
 .why_us .text_horizontal span{
     margin:25px 0;
-    width:40vw;
+    width:35vw;
     padding:0 15px;
 }
 
@@ -229,7 +230,7 @@ main{
 }
 
 .icon_box{
-    height:640px;
+    height:fit-content;
     display:flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -249,7 +250,7 @@ main{
     transition: 0.2s;
 }
 
-.box_segment h4{
+.box_segment>h4{
     color: #FFF;
     text-align: center;
     font-size: 28px;
@@ -266,7 +267,7 @@ main{
 }
 /*------------------------------"Our Awesome Portfolio" Block------------------------*/
 .portfolio{
-    height:830px;
+    height:fit-content;
     display:flex;
     flex-direction: column;
 }
@@ -279,7 +280,7 @@ main{
 .image_box{
     display:flex;
     justify-content: space-between;
-    margin:185px 0 185px 0;
+    margin:190px 0;
 }
 .image_box>.portfolio_border{
     width: 384px;
@@ -304,6 +305,7 @@ main{
 .contacts{
     height:500px;
 }
+
 .contact_box{
     display:flex;
     flex-direction: column;

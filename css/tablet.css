@@ -1,4 +1,4 @@
-@media screen  and ( max-width: 500px){
+@media screen and (min-width:501px) and (max-width: 799px){
 
     /*---------------------------------BLOCKS-------------------------------------------*/
     .inner{
@@ -6,89 +6,83 @@
     }
     .container{
         width: 100%;
-        max-width: 310px;
+        max-width: 450px;
     }
     /*--------------------------------------TEXT STYLIZATION-------------------------------*/
     .white-transparent-text{
-        font-size: 16px;
+        font-size: 18px;
         font-weight: 400;
-        line-height: 150%; /* 24px */
+        line-height: 120%; /* 24px */
     }
     h2{
-        font-size: 36px;
+        font-size: 50px;
         font-weight: 400;
-        line-height: 150%; /* 54px */
+        line-height: 120%; /* 54px */
     }
     /*----------------------------------BUTTONS-----------------------------------------*/
     .blue_button>button{
-        width: 166px;
-        height: 44px;
+        width: 200px;
+        height: 60px;
     }
     .blue_button>button>span{
-        font-size: 16px;
-    }
-    .white_button{
-        display:none;
-    }
-    .logo{
-        height:27px;
+        font-size: 18px;
     }
     /*-----------------------------HEADER---------------------------------*/
     nav{
         display: none;
     }
-
     /*----------------------------- MAIN --------------------------------------*/
-    /*------------------------- FIRST SCREEN -------------------------------*/
+    /*---------------------------------FIRST SCREEN-------------------------------*/
     .banner{
         flex-wrap:wrap;
-        height:954px;
+        height:1150px;
+        justify-content: center;
     }
     .text_box{
         width:85vw;
-        height:525px;
+        height:600px;
     }
     .text_box>h1{
-        font-size: 42px;
-        line-height: 150%;
+        font-size: 62px;
+        line-height: 120%;
         margin:0 0 30px 0;
     }
     .photo_banner{
         width:100%;
-        height: 406px;
+        height: 500px;
         display: flex;
         justify-content: center;
         align-items: center;
     }
     .photo_banner>img{
-        min-width: 300px;
-        max-width: 320px;
-        height: 406px;
+        min-width: 400px;
+        max-width: 700px;
+        height:500px;
     }
     /*------------------------------"Why Enver Is The Best Choice?" Block------------------------*/
     .why_us{
-        height: 580px;
+        height: 640px;
     }
     .why_us .text_horizontal{
         display:flex;
         justify-content: center;
         flex-wrap: wrap;
-        margin:0 0 20px 0;
+        margin:0 0 30px 0;
     }
     .why_us .text_horizontal h2{
-        width:95%;
+        width:96%;
     }
     .why_us .text_horizontal span{
-        width:95%;
+        width:96%;
         margin:30px 0;
         padding:0;
     }
     /*------------------------------"The Service We Provide For You" Block------------------------*/
     .service{
-        height:2100px;
+        height:2110px;
     }
     .service .inner{
-        height:2100px;
+        height:fit-content;
         justify-content: left;
     }
     .service h2{
@@ -101,47 +95,32 @@
         align-items: flex-start;
         gap:20px;
     }
-
     .box_segment{
         margin:40px 0;
     }
     .box_segment h4{
-        font-size: 24px;
+        font-size: 26px;
     }
     /*------------------------------"Our Awesome Portfolio" Block------------------------*/
-    .portfolio{
-        height:630px;
-    }
-    .portfolio .inner{
-        height: 450px;
-    }
 
     .portfolio h2{
-        font-size: 35px;
-        font-weight: 400;
+        text-align: center;
     }
     .image_box{
-        margin:50px  0 0 0;
-        display: flex;
+        flex-wrap: wrap;
         justify-content: center;
-        position: relative;
-        z-index: 2;
+        margin: 100px 0;
+        gap:20px;
     }
     .image_box>.portfolio_border{
-        border-radius: 22px;
-        max-width: 90vw;
-        height: 320px;
-        position: absolute;
-        z-index: 2;
+        width: 430px;
+        height: 339px;
+        border-radius: 34px;
     }
     .image_box>.portfolio_border>img{
-        max-width: 82vw;
-        height: 280px;
-        position: absolute;
-        z-index: 2;
-    }
-    .image_box>.portfolio_border:nth-child(1n+2){
-        display:none;
+        border-radius: 12px;
+        width: 392px;
+        height: 300px;
     }
     /*------------------------------"Contact us for the service you want to use" Block------------------------*/
     .contacts{
@@ -158,36 +137,8 @@
     .contact_box .blue_button{
         margin-top:50px;
     }
-
-
     /*------------------------------"Footer" Block------------------------*/
     .footer{
-        height:420px;
-    }
-
-    .footer_box{
-        height:305px;
-        flex-wrap:wrap;
-        flex-direction: column;
-        justify-content: space-evenly;
-    }
-    .footer_box span{
-        text-align: center;
-    }
-    .footer_box>.white-transparent-text{
-
-        text-align: center;
-    }
-    .footer_box .support{
-        display: contents;
-    }
-    .footer_box .support a{
-        text-decoration: none;
-        color:inherit;
-    }
-    .footer_box .support a:hover{
-        color: #5454D4;
-        font-size: 18px;
-        transition: 0.2s;
+        height:120px;
     }
 }
